@@ -14,7 +14,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'closetag.vim'
 Bundle 'sjl/gundo.vim'
 
-Bundle 'mpilquist/vim-mpilquist'
+Bundle 'brockstroh/vim-brockstroh'
 
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdcommenter'

@@ -14,12 +14,12 @@ if ! [[ -d ~/.vim/bundle/vundle ]]; then
   git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 fi
 
-if ! [[ -d ~/.vim/bundle/vim-mpilquist ]]; then
-  git clone ${PREFIX}mpilquist/vim-mpilquist.git ~/.vim/bundle/vim-mpilquist
+if ! [[ -d ~/.vim/bundle/vim-brockstroh ]]; then
+  git clone ${PREFIX}brockstroh/vim-brockstroh.git ~/.vim/bundle/vim-brockstroh
 fi
 
 test -f ~/.vimrc && mv ~/.vimrc ~/.vimrc.bak
 
-ln -s ~/.vim/bundle/vim-mpilquist/vimrc ~/.vimrc
+ln -s ~/.vim/bundle/vim-brockstroh/vimrc ~/.vimrc
 
 vi +BundleInstall +qall
