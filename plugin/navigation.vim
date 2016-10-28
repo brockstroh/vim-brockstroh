@@ -5,9 +5,8 @@ set foldlevelstart=99
 set incsearch
 set hlsearch
 
-" pressing \<space> clears the search highlights
-" " http://www.terminally-incoherent.com/blog/2012/03/26/how-to-configure-vim/
-nmap <silent> <leader><space> :nohlsearch<CR>
+" pressing ctrl L clears search and re draws the screen
+nnoremap <C-l> :nohlsearch<CR><C-l>
 
 " More bash-like tab completion
 set wildmode=longest,list,full
