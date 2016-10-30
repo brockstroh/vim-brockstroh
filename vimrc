@@ -5,7 +5,6 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
@@ -23,7 +22,13 @@ Bundle 'sukima/xmledit'
 Bundle 'leshill/vim-json'
 Bundle 'Townk/vim-autoclose'
 Bundle 'mileszs/ack.vim'
-Bundle 'vim-scripts/copy-as-rtf'
+
+" Assume that if system is not Linux we are on a Mac
+let unamestr = system('uname')
+if !matchstr(unamestr, 'Linux') == 'Linux'
+  Bundle 'vim-scripts/copy-as-rtf'
+endif
+
 Bundle 'vim-scripts/camelcasemotion'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'Shougo/neocomplcache'
